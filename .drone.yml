@@ -1,5 +1,8 @@
 build:
-  image: php
+  image: php5.4
+  environment:
+    AWS_ACCESS_KEY_ID: $$AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: $$AWS_SECRET_ACCESS_KEY
   commands:
     - echo $AWS_ACCESS_KEY_ID
     - echo $AWS_SECRET_ACCESS_KEY
