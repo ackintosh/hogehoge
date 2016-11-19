@@ -1,0 +1,18 @@
+{
+    "name": "akihito1/hogehoge",
+    "authors": [
+        {
+            "name": "akihito.nakano",
+            "email": "sora.akatsuki@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+      "phpunit/phpunit": "*"
+    },
+  "autoload": {
+    "psr-4": {
+      "Ackintosh\\": "src/"
+    }
+  }
+}
