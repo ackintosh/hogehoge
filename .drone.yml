@@ -1,0 +1,10 @@
+build:
+  image: php
+  commands:
+    - echo $AWS_ACCESS_KEY_ID
+    - echo $AWS_SECRET_ACCESS_KEY
+    - curl -sS https://getcomposer.org/installer | php
+    - php composer.phar install
+    - vendor/bin/phpunit --coverage-html coverage_report
+    - sudo pip install --quiet awscli 
+    - aws s3 ls
